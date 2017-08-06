@@ -32,25 +32,25 @@ class App extends Component {
               onLeftIconButtonTouchTap={() => this.setState({ open: !this.state.open })}
             />
             <Drawer open={this.state.open} docked={false} onRequestChange={open => this.setState({ open })}>
-              <NavLink to="/" activeClassName="selected">
+              <NavLink exact to="/" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose} primaryText={'Home'} />
               </NavLink>
-              <NavLink to="/logos" activeClassName="selected">
+              <NavLink exact to="/logos" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose} primaryText={'Logos'} />
               </NavLink>
-              <NavLink to="/posters" activeClassName="selected">
+              <NavLink exact to="/posters" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose}>Posters</MenuItem>
               </NavLink>
-              <NavLink to="/letterhead" activeClassName="selected">
+              <NavLink exact to="/letterhead" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose}>Letterhead</MenuItem>
               </NavLink>
-              <NavLink to="/share-a-story" activeClassName="selected">
+              <NavLink exact to="/share-a-story" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose}>Share a Story</MenuItem>
               </NavLink>
-              <NavLink to="/service-request-form" activeClassName="selected">
+              <NavLink exact to="/service-request-form" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose}>Service Request Form</MenuItem>
               </NavLink>
-              <NavLink to="/tutorial" activeClassName="selected">
+              <NavLink exact to="/tutorial" activeClassName="active">
                 <MenuItem onTouchTap={this.handleClose}>Tutorial</MenuItem>
               </NavLink>
             </Drawer>
