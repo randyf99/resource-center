@@ -33,7 +33,6 @@ class App extends Component {
         <MuiThemeProvider muiTheme={getMuiTheme(fusTheme)}>
           <div>
             <SideNav />
-
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/logos-posters" component={LogosPosters} />
